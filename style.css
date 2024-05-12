@@ -1,0 +1,244 @@
+body {
+	margin: auto 0;
+}
+
+.zone {
+	cursor: pointer;
+	color: #fff;
+	font-size: 2em;
+}
+
+/* Navigation Bar */
+.main-nav {
+	display: flex;
+	list-style: none;
+	font-size: 0.7em;
+	margin: 0;
+	padding: 20px;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.main-nav {
+		font-size: 0.5em;
+		padding: 10px;
+	}
+
+	.active {
+		padding: 5px;
+	}
+}
+
+.push {
+	margin-left: auto;
+	background-color: #4096ee;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.main-nav li {
+	padding: 10px 10px 10px 10px;
+}
+
+.main-nav a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Cover Section */
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.container img {
+	max-width: 100%;
+}
+
+.project-container img:hover {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+		inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+		inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	-o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+		inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+		inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
+/* Project Grid Section */
+.project-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	padding-top: 50px;
+	padding-bottom: 50px;
+	justify-content: space-around;
+	justify-items: center;
+}
+
+.project-container img {
+	width: 60%;
+	height: 70%;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+/* About Section*/
+.about {
+	display: flex;
+	flex-direction: column;
+	height: 20%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 30px 10%;
+	font-size: 3vw;
+}
+
+.about h1 {
+	margin: 0;
+}
+
+.about-h1 {
+	padding-bottom: 20px;
+	font-size: 3vw;
+}
+
+.evolving {
+	padding-top: 0;
+	font-size: 10vw;
+	color: #3056be;
+}
+
+input[type='submit'] {
+	background-color: #4369cf;
+	color: white;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+input[type='submit']:hover {
+	background-color: #0e4a8a;
+}
+
+/* Footer Section */
+footer {
+	display: flex;
+	height: 5vh;
+	justify-content: center;
+	align-items: center;
+	color: rgb(255, 255, 255);
+}
+
+/* Sections by color */
+.blue {
+	background: #3056be; /* Old browsers */
+	background: -moz-linear-gradient(
+		top,
+		#465ab3 0%,
+		#434daa 44%,
+		#2a3b9c 100%
+	); /* FF3.6+ */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0%, #7abcff),
+		color-stop(44%, #60abf8),
+		color-stop(100%, #4096ee)
+	); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(
+		top,
+		#465ab3 0%,
+		#434daa 44%,
+		#2a3b9c 100%
+	); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(
+		top,
+		#465ab3 0%,
+		#434daa 44%,
+		#2a3b9c 100%
+	); /* Opera 11.10+ */
+	background: -ms-linear-gradient(
+		top,
+		#465ab3 0%,
+		#434daa 44%,
+		#2a3b9c 100%
+	); /* IE10+ */
+	background: linear-gradient(
+		top,
+		#465ab3 0%,
+		#434daa 44%,
+		#2a3b9c 100%
+	); /* W3C */
+}
+
+.blue-light {
+	background: #7abcff; /* Old browsers */
+	background: -moz-linear-gradient(
+		top,
+		#7abcff 0%,
+		#60abf8 44%,
+		#4096ee 100%
+	); /* FF3.6+ */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0%, #7abcff),
+		color-stop(44%, #60abf8),
+		color-stop(100%, #4096ee)
+	); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(
+		top,
+		#7abcff 0%,
+		#60abf8 44%,
+		#4096ee 100%
+	); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(
+		top,
+		#7abcff 0%,
+		#60abf8 44%,
+		#4096ee 100%
+	); /* Opera 11.10+ */
+	background: -ms-linear-gradient(
+		top,
+		#7abcff 0%,
+		#60abf8 44%,
+		#4096ee 100%
+	); /* IE10+ */
+	background: linear-gradient(
+		top,
+		#7abcff 0%,
+		#60abf8 44%,
+		#4096ee 100%
+	); /* W3C */
+}
+
+.briem-hand {
+	font-family: 'Briem Hand', cursive;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.cabin {
+	font-family: 'Cabin', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-variation-settings: 'wdth' 100;
+}
